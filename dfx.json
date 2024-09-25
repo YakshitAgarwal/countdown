@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "cdown_backend": {
+      "main": "src/cdown_backend/main.mo",
+      "type": "motoko"
+    },
+    "cdown_frontend": {
+      "dependencies": [
+        "cdown_backend"
+      ],
+      "source": [
+        "src/cdown_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "cdown_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
